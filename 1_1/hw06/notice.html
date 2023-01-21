@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> notice </title>
+    <style>
+        * {
+            font-family:"HY바다M";
+        }
+        .home {
+            float:left; height:100px; width:220px;
+        }
+        .head {
+            float:right; margin-right:100px; margin-top:20px;
+        }
+        #navy {
+            color:navy; font-weight:bold;
+        }
+        h1 {
+            margin-top:100px; color:red;
+            text-align:center;
+        }
+        .grid {
+                display:grid; 
+                grid-template-columns:150px 1fr;
+                border-bottom:1px solid;
+            }   
+        h2{
+            border-right:1px solid; text-align:center;
+            }
+        #p{
+            padding-left:10px;
+        }
+        @media(max-width:830px) {
+            .grid {
+                display:block;
+            }
+            h2 {
+                border-right:none;
+            }
+            h1 {
+                display:none;
+            }
+            line {
+                display:none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="hw06.html" title="home"><img class="home" src="img/place.jpg"></a>
+    <line><p class="head"><a href="garden.html" title="garden">정원소개</a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="plant.html" title="plant">식물소개</a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="inform.html" title="inform">방문안내</a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="notice.html" title="notice"><span id="navy">체험신청</span></a></p>&emsp;</line>
+    <h1>체험 신청은 그 전날 17시부터 가능합니다. 선착순이오니 유의하시기 바랍니다.</h1>
+    <div class="grid">
+        <h2>유채꽃 음식 만들기</h2>
+        <div id="p">
+            <p>일시 : 4월 10일~30일</p>
+            <p>체험 시간 : 11시, 12시(약 1시간 소요)</p>
+            <p>인원 : 매 시간마다 선착순 15팀(팀 당 2명)</p>
+            <p>체험 : 유채꽃 파스타, 유채꽃 튀김 만들기(변동될 수 있음)</p>
+            <p><a href="form1.html" target="_blank">체험 신청하는 곳</a></p>
+        </div>
+    </div>
+    <div class="grid">
+        <h2>라벤더 방향제 만들기</h2>
+        <div id="p">
+            <p>일시 : 7월 1일~31일</p>
+            <p>체험 시간 : 10시, 11시, 13시, 14시(약 30분 소요)</p>
+            <p>인원 : 매 시간마다 선착순 30명</p>
+            <p>체험 : 라벤더 향기 주머니 만들기</p>
+            <p><a href="form2.html" target="_blank">체험 신청하는 곳</a></p>
+        </div>
+    </div>
+    <div class="grid">
+        <h2>단풍 책갈피 만들기</h2>
+        <div id="p">
+            <p>일시 : 10월 1일~11월 15일</p>
+            <p>체험 시간 : 10시, 11시, 13시, 14시(약 30분 소요)</p>
+            <p>인원 : 매 시간마다 선착순 50명</p>
+            <p>체험 : 단풍나무 잎 책갈피 만들기</p>
+            <p><a href="form3.html" target="_blank">체험 신청하는 곳</a></p>
+        </div>
+    </div>
+</body>
+
+</html>

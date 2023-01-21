@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> plant </title>
+    <style>
+        * {
+            font-family:"HY바다M";
+        }
+        .home {
+            float:left; height:100px; width:220px;
+        }
+        .head {
+            float:right; margin-right:100px; margin-top:20px;
+        }
+        #navy {
+            color:navy; font-weight:bold;
+        }
+        div {
+            margin-top:100px; text-align:center;
+        }
+        .span {
+            font-size:25px; 
+        }
+        #top {
+            margin-top:30px;;
+        }
+        @media(max-width:830px) {
+            div {
+                display:none;
+            }
+        }
+        @media(max-width:620px) {
+            p {
+                display:none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <a href="hw06.html" title="home"><img class="home" src="img/place.jpg"></a>
+    <p class="head"><a href="garden.html" title="garden">정원소개</a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="plant.html" title="plant"><span id="navy">식물소개</span></a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="inform.html" title="inform">방문안내</a>&emsp;&emsp;|&emsp;&emsp;
+        <a href="notice.html" title="notice">체험신청</a></p>&emsp;
+        <div>
+            <span class="span">
+                <a href="tree.html" target="if_a">나무</a>&emsp;&emsp;&emsp;|&emsp;&emsp;&emsp;
+            </span>
+            <span class="span">
+                <a href="flower.html" target="if_a">꽃</a>
+            </span>
+        </div>
+        <p id="top">
+            <iframe width="1250" height="600" name="if_a" frameborder="0"></iframe>
+        </p>
+</body>
+
+</html>

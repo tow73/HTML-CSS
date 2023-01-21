@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> form2+ </title>
+    <style>
+        .title {
+            color:blueviolet;
+            font-size:30px; 
+            font-weight:bold;
+        }
+        .red {
+            color:red;
+        }
+        .orange {
+            color:orangered
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><span class="title">라벤더 방향제 만들기 신청</span></legend>
+            <h3>신청할 <span class="red">시간</span>을 선택해주세요.</h3>
+            <input type="radio" name="time" value="10">10시
+            <p></p>
+            <input type="radio" name="time" value="11">11시
+            <p></p>
+            <input type="radio" name="time" value="13">13시
+            <p></p>
+            <input type="radio" name="time" value="14">14시
+            <h3>신청하시는 분의 <span class="red">이름</span>을 입력해주세요.</h3>
+            <p>이름 : <input type="text" name="name"></p>
+            <h3>신청하시는 분의 <span class="red">휴대전화번호</span>를 입력해주세요.
+                <span class="orange">(숫자만 입력)</span></h3>
+            <p>휴대전화번호 : <input type="text" name="number"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+            <p class="red">신청이 완료되면 확인 문자가 발송됩니다.</p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

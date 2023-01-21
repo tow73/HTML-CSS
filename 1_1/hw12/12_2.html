@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <meta charset="UTF-8">
+    <title> 12_2 </title>
+
+    <style>
+        img {
+            width:300px; height:300px;
+        }
+    </style>
+
+    <script>
+        function on(elem) {            /*elem은 picture과 같은 다른 값으로 만들어도 됨*/
+            elem.style.width="900px";
+            elem.style.height="900px";
+        }
+        function out(elem) {
+            elem.style.width="";
+            elem.style.height="";
+        }
+    </script>
+</head>
+
+<body>
+    <img onmouseover="on(this)" onmouseout="out(this)" src="./img/dongduk.jpg">
+</body>
+
+</html>

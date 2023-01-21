@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 430_5 </title>
+    <style>
+        table, tr, th, td {
+            border:1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <table border='1'>
+        <tr>
+            <th>이름</th>
+            <th>가격</th>
+            <th>개수</th>
+        </tr>
+        <tr>
+            <td id='fruit00'></td>
+            <td id='fruit01'></td>
+            <td id='fruit02'></td>
+        </tr>
+        <tr>
+            <td id='fruit10'></td>
+            <td id='fruit11'></td>
+            <td id='fruit12'></td>
+        </tr>
+        <tr>
+            <td id='fruit20'></td>
+            <td id='fruit21'></td>
+            <td id='fruit22'></td>
+        </tr>
+
+    <script>
+        var fruit=new Array (
+            ['사과', 21000, 10],
+            ['참외', 18000, 20],
+            ['귤', 15000, 30]
+        );
+
+        for( var i=0; i<3; i++) {
+            var cname=document.getElementById("fruit0"+i);
+            cname.textContent=fruit[0][i];
+            var cname=document.getElementById("fruit1"+i);
+            cname.textContent=fruit[1][i];
+            var cname=document.getElementById("fruit2"+i);
+            cname.textContent=fruit[2][i];
+        }
+    </script>
+</body>
+
+</html>

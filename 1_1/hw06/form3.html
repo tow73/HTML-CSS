@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> form3 </title>
+    <style>
+        span {
+            color:crimson; font-weight:bold;
+        }
+        .red {
+            color:red;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend><span>단풍 책갈피 만들기 신청</span></legend>
+            <h3>신청할 시간을 선택해주세요.</h3>
+            <input type="checkbox" name="time" value="10">10시
+            <p></p>
+            <input type="checkbox" name="time" value="11">11시
+            <p></p>
+            <input type="checkbox" name="time" value="13">13시
+            <p></p>
+            <input type="checkbox" name="time" value="14">14시
+            <h3>신청하시는 분의 이름을 입력해주세요.</h3>
+            <p>이름 : <input type="text" name="name"></p>
+            <h3>신청하시는 분의 휴대전화번호를 입력해주세요.(숫자만 입력)</h3>
+            <p>휴대전화번호 : <input type="text" name="number"></p>
+            <input type="submit" value="제출">
+            <input type="reset" value="다시작성">
+            <p class="red">신청이 완료되면 확인 문자가 발송됩니다.</p>
+        </fieldset>
+    </form>
+</body>
+
+</html>

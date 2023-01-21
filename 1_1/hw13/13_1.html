@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 13_1 </title>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        var n1=0;
+        $(document).ready(function() {
+            $("div.first").mousedown(function() {
+                $("p:first",this).text("mouse down");
+                $("p:last",this).html("총 클릭 횟수 " + ++n1);
+            });
+        });
+        var n2=0;
+        $(document).ready(function() {
+            $("div.second").mousedown(function() {
+                $("p:first",this).text("mouse down");
+                $("p:last",this).text("총 클릭 횟수 " + ++n2);
+            });
+        });
+        var n3=0;
+        $(document).ready(function() {
+            $("div.third").mousedown(function() {
+                $("p:first",this).text("mouse down");
+                $("p:last",this).text("총 클릭 횟수 " + ++n3);
+            });
+        });
+    </script>
+
+    <style>
+        div.first {
+            width:150px; height:150px;
+            text-align:center;
+            background-color:yellow;
+        }
+        div.second {
+            width:150px; height:150px;
+            text-align:center;
+            background-color:cornflowerblue;
+        }
+        div.third {
+            width:150px; height:150px;
+            text-align:center;
+            background-color:aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="first">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="second">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+    <div class="third">
+        <p>마우스 클릭 횟수</p>
+        <p>0</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 13_3 </title>
+
+    <script src="jquery-3.6.0.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("img.second").hide();
+            $("button.second").click(function() {
+                $("img.second").slideToggle();
+            });
+        });
+    </script>
+
+    <style>
+        img.first {
+            width:300px; height:300px;
+        }
+        img.second {
+            width:900px; height:900px;
+        }
+    </style>
+</head>
+
+<body>
+    <img class="first" src="./img/dongduk.jpg">
+    <br><br>
+    <button class="second">큰 이미지 보기/닫기</button>
+    <br><br>
+    <img class="second" src="./img/dongduk.jpg">
+</body>
+
+</html>

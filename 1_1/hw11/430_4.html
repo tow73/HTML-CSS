@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> 430_4 </title>
+</head>
+
+<body>
+    <table border='1'>
+        <tr>
+            <th>이름</th>
+            <th>가격</th>
+            <th>개수</th>
+        </tr>
+        <tr>
+            <td id='fruit10'></td>
+            <td id='fruit20'></td>
+            <td id='fruit30'></td>
+        </tr>
+        <tr>
+            <td id='fruit11'></td>
+            <td id='fruit21'></td>
+            <td id='fruit31'></td>
+        </tr>
+        <tr>
+            <td id='fruit12'></td>
+            <td id='fruit22'></td>
+            <td id='fruit32'></td>
+        </tr>
+
+    <script>
+        var fruit=[
+            {name: '사과', price: 21000, num: 10},
+            {name: '참외', price: 18000, num: 20},
+            {name: '귤', price: 15000, num: 30}
+        ]
+
+        for(var i=0; i<4; i++) {
+            var cname=document.getElementById("fruit1"+i);
+            cname.textContent=fruit[i].name;
+            var cname=document.getElementById("fruit2"+i);
+            cname.textContent=fruit[i].price;
+            var cname=document.getElementById("fruit3"+i);
+            cname.textContent=fruit[i].num;
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="all.css">
+    <title> garden+ </title>
+    <style>
+        #top {
+            width:980px;
+            margin:0 auto;
+        }
+        #logo {
+            float:left;
+            height:90px; width:220px;
+        }
+        #menu {
+            float:right;
+            margin:50px 30px 0 20px;
+        }
+        #menu li {
+            display:inline;
+        }
+        .line {
+            margin-top:9px;
+            border-top:solid 1px #cccccc;
+        }
+        .box {
+            position:absolute;
+            text-align: center;
+            font-size:20px;
+            color:whitesmoke;
+            background-color:rgba(128,128,128,0.5);
+            margin-top:120px;
+            width:100%;
+        }
+        #back {
+            background:url(img/garden.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width:1250px; height:600px;
+            margin-top:10px;
+            margin-left:7px;
+        }
+        footer {
+            margin-top:10px;
+            padding:20px 0 0 20px;
+            border-top:solid 3px green;
+            color:#666666;
+        }
+        footer #address {
+            float:left;
+        }
+        footer #org {
+            margin-top:10px;
+            margin-bottom:15px;
+        }
+        footer #org li {
+            margin-top:2px;
+        }
+        footer #web {
+            float:right;
+        }
+        footer #icon {
+            margin-top:5px;
+            text-align:right;
+        }
+        footer #icons {
+            width:25px; height:25px;
+        }
+    </style>
+</head>
+
+<body>
+<header>
+    <a href="hw07.html" title="home"><img id="logo" src="img/place.jpg"></a>
+    <ul id="menu">
+        <li><a href="garden+.html" title="garden">정원소개</a>&emsp; | </li>&emsp;
+        <li><a href="plant+.html" title="plant">식물소개</a>&emsp; | </li>&emsp;
+        <li><a href="inform+.html" title="inform">방문안내</a>&emsp; | </li>&emsp;
+        <li><a href="notice+.html" title="notice">체험신청</a></li>
+    </ul>
+    <div class="clear"></div>
+    <div class="line"></div>
+</header>
+
+<section>
+<div>
+    <div class="box">
+        <h2>휴식이 필요한 여러분</h2>
+        <h2><span>SJ의 정원</span>에 오신 것을 환영합니다.</h2>
+        <h2></h2>
+        <br>
+        <h2>이런 말이 있죠</h2> 
+        <h2>'일한 대가로 얻은 휴식은</h2>
+        <h2>일한 사람만이 맛보는 쾌락이다.'</h2>
+        <br>
+        <h2>열심히 일한 당신에게</h2>
+        <h2>오늘 하루 이곳에서의 휴식을 선물하세요.</h2>
+        <br>
+        <h2>최고의 휴식을 선물드리겠습니다.</h2>
+        <h2>어서오세요. 'SJ의 정원'입니다.</h2>
+    </div>
+        <img id="back" src="img/garden.jpg">
+</div>
+</section>
+
+<footer>
+    <article id="address">
+        <ul id="org">
+            <li>주소 : a시 b구 c동 d로 e길</li>
+            <li>전화 : 123-456-789</li>
+            <li>메일 : abcde@sj.com</li>
+        </ul>
+    </article>
+    <article id="web">
+        <select>
+            <option>구글</option>
+            <option>네이버</option>
+            <option>다음</option>
+        </select>
+        <div id="icon">
+            <img id="icons" src="img/i.png">
+            <img id="icons" src="img/b.png">
+            <img id="icons" src="img/c.jpg">
+        </div>
+    </article>
+</footer>
+</body>
+
+</html>
